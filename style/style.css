@@ -17,7 +17,9 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url(./resources/profile_img4.png);
-    background-size: 81vh;
+style
+    background-size: 80vh;
+
     background-repeat: no-repeat;
     /* background-position:   right -15%; */
     background-position: right center;

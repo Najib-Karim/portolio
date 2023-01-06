@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/resources/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#servics">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img
+              src="/resources/close_icon.svg"
+              class="close-btn menu-btn"
+              alt="close icon"
+              onclick="closemenu()"
+            />
+          </ul>
+          <img
+            src="/resources/menu_icon.svg"
+            class="menu-icon menu-btn"
+            alt="menu icon"
+            onclick="openmenu()"
+          />
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Najibullah</span><br />
+            Karim From United Kingdon
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <!-- ----about--- -->
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/resources/portraite2.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am looking to eatablish myself as a developer. I have always
+              enjoyed building and developing program as it has allowed me to
+              exercise my problem solving skills and I appreciate the technical
+              challenges.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App InterFaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Designing Web/App InterFaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2016-Present</span><br />Mabway</li>
+                <li><span>2022</span><br />IT Carrer Internship</li>
+                <li><span>2018</span><br />Access Science</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022</span><br />Designing Web/App InterFaces</li>
+                <li><span>2014</span><br />Mechanical Engineering</li>
+                <li><span>2013</span><br />Access Science</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----services--- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Design</h2>
+            <p>
+              Comedian: "So I was trying to use this new AI chatbot website
+              called ChatGPT and I got an error message that said 'A lot of
+              people are checking out ChatGPT right now. Please check back
+              soon!'"
+            </p>
+            <a href="#">Learn MOre</a>
+          </div>
+          <div>
+            <h2>App Design</h2>
+            <p>
+              Comedian: "So I was trying to use this new AI chatbot website
+              called ChatGPT and I got an error message that said 'A lot of
+              people are checking out ChatGPT right now. Please check back
+              soon!'"
+            </p>
+            <a href="#">Learn MOre</a>
+          </div>
+          <div>
+            <h2>Funny Design</h2>
+            <p>
+              Comedian: "So I was trying to use this new AI chatbot website
+              called ChatGPT and I got an error message that said 'A lot of
+              people are checking out ChatGPT right now. Please check back
+              soon!'"
+            </p>
+            <a href="#">Learn MOre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----portfolio---- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/resources/snow_tribometer.JPG" alt="" />
+            <div class="layer">
+              <h3>Engineering Project</h3>
+              <p>
+                The device measures effects of different treatment of ski on
+                friction
+              </p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/resources/snow_tribometer.JPG" alt="" />
+            <div class="layer">
+              <h3>Coding Project</h3>
+              <p>
+                The device measures effects of different treatment of ski on
+                friction
+              </p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/resources/snow_tribometer.JPG" alt="" />
+            <div class="layer">
+              <h3>Mystry Project</h3>
+              <p>
+                The device measures effects of different treatment of ski on
+                friction
+              </p>
+              <a href="#">Link</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ---contact--- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>najib.karimi@hotmail.com</p>
+            <p>076043435</p>
+            <div class="social-icons">
+              <a href="#"><img src="/resources/facebook.png" alt="" /></a>
+              <a href="#"><img src="/resources/linkedin.png" alt="" /></a>
+              <a href="#"><img src="/resources/share.png" alt="" /></a>
+            </div>
+            <a href="#" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ NK. Made with
+          <span><img src="/resources/heart.png" alt="" /></span> by Najibullah
+          Karim
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
